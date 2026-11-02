@@ -1,4 +1,4 @@
-# Cos_Alpha — phiên bản 6
+# Cos_Alpha
 
 Toàn bộ mã nguồn HTML, CSS và JavaScript nằm trong index.html; các ảnh đi kèm nằm cùng thư mục.
 
