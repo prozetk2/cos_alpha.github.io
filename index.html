@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Quốc Hiển - Links</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f4ed">
+<meta name="description" content="Nguyễn Quốc Hiển — AI & Automation Engineer. Khám phá hồ sơ, mã nguồn và kết nối với Hiển.">
+<title>Nguyễn Quốc Hiển — AI & Automation Engineer</title>
+<style>
+:root{color-scheme:light;--paper:#f5f4ed;--ink:#193d35;--muted:#58675f;--line:#d9dfd3;--accent:#d9edab}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}a,button{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:3px solid #477327;outline-offset:5px}.skip{position:absolute;top:-100px;left:20px;padding:12px;background:var(--ink);color:white;z-index:10}.skip:focus{top:12px}.wrap{width:min(1120px,calc(100% - 64px));margin:auto}
+header{display:flex;align-items:center;justify-content:space-between;padding:29px 0;border-bottom:1px solid var(--line)}.brand{font-weight:750;letter-spacing:-.6px;font-size:22px}.brand span{color:#678344}nav{display:flex;gap:30px;font-size:14px;font-weight:600}nav a:hover{text-decoration:underline;text-underline-offset:6px}.nav-contact{display:inline-flex;gap:12px;align-items:center}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:70px;padding:80px 0 72px;align-items:center}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:700;display:flex;align-items:center;gap:10px}.dot{height:8px;width:8px;border-radius:50%;background:#608c42}h1{font-size:clamp(42px,5.6vw,70px);line-height:1.06;letter-spacing:-3px;margin:24px 0}h1 span{display:block}.role{font-size:clamp(19px,2.3vw,25px);font-weight:500;margin:0 0 19px}.intro{color:var(--muted);font-size:16px;max-width:460px;margin:0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.button{min-height:48px;padding:12px 22px;border:1px solid var(--ink);border-radius:100px;font-weight:650;font-size:14px;display:inline-flex;gap:18px;align-items:center;justify-content:center;transition:background .18s,transform .18s}.primary{background:var(--ink);color:#fff}.primary:hover{background:#2e5546}.secondary:hover{background:#e5e9dc}.button:hover{transform:translateY(-2px)}
+.portrait{position:relative;margin:0;padding:0 0 20px 20px}.photo-frame{background:#dfe5d3;border-radius:150px 150px 20px 20px;overflow:hidden;aspect-ratio:4/4.2;border:1px solid #d4dcc8}.photo-frame img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}.photo-label{position:absolute;bottom:0;left:0;right:28px;background:var(--ink);color:white;border-radius:12px;padding:17px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}.photo-label strong{font-size:14px;display:block}.photo-label small{font-size:12px;color:#c9d7ce}.photo-label .mark{color:var(--accent);font-size:28px}
+.expertise{display:flex;align-items:center;flex-wrap:wrap;gap:12px 30px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.expertise>span:first-child{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-right:auto}.expertise strong{font-weight:550;font-size:14px}.expertise strong:before{content:"✳";color:#6f8a4d;margin-right:10px}
+.connections{padding:64px 0 70px;scroll-margin-top:24px}.section-top{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:28px}h2{font-size:32px;letter-spacing:-1.2px;line-height:1.2;margin:9px 0 0}.section-top p{margin:0;color:var(--muted);font-size:14px;max-width:275px}.links{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.link-card{grid-column:span 2;border:1px solid var(--line);border-radius:16px;padding:24px;background:#fbfcf7;min-height:180px;display:flex;flex-direction:column;transition:background .18s,border-color .18s,transform .18s}.link-card.featured{grid-column:span 3;min-height:195px}.link-card.github{background:var(--ink);border-color:var(--ink);color:#fff}.link-card.linkedin{background:var(--accent);border-color:#c4d99b}.link-card:hover{transform:translateY(-4px);border-color:#7b9272;background:#edf1e3}.link-card.github:hover{background:#285044}.link-card.linkedin:hover{background:#cfe49e}.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.icon{font-family:ui-monospace,SFMono-Regular,monospace;font-weight:700;font-size:18px;line-height:1;border:1px solid currentColor;border-radius:9px;width:38px;height:38px;display:grid;place-items:center}.arrow{font-size:22px;font-weight:400}.link-card h3{font-size:19px;margin:0 0 5px;letter-spacing:-.4px}.link-card p{font-size:13px;margin:0;color:var(--muted)}.github p{color:#c8d8d0}.linkedin p{color:#3e5931}.card-bottom{margin-top:auto}.connect-note{font-size:12px;color:var(--muted);margin:18px 0 0}
+footer{border-top:1px solid var(--line);padding:24px 0 30px;display:flex;gap:20px;justify-content:space-between;font-size:12px;color:var(--muted)}footer a:hover{text-decoration:underline}
+@media(min-width:1250px){.hero{gap:100px}.portrait{max-width:400px;justify-self:end;width:100%}}
+@media(max-width:760px){.wrap{width:calc(100% - 40px)}header{padding:21px 0}nav{gap:18px}.hero{gap:30px;padding:48px 0;grid-template-columns:1.1fr 1fr}h1{letter-spacing:-2px;font-size:46px}.role{font-size:18px}.intro{font-size:14px}.photo-label{padding:12px;right:0}.photo-label small{font-size:10px}.photo-label strong{font-size:12px}.portrait{padding-left:0}.section-top{align-items:start}.link-card{padding:20px}.expertise{gap:12px 20px}}
+@media(max-width:560px){nav .nav-about{display:none}.hero{grid-template-columns:1fr;padding-top:36px;gap:36px}.hero-copy{order:1}.portrait{order:0;width:min(270px,80%);justify-self:center;padding-bottom:17px}.photo-frame{aspect-ratio:1.16;border-radius:120px 120px 18px 18px}.photo-label{left:-15px;right:-15px;bottom:0}h1{font-size:48px;margin:18px 0}.eyebrow{font-size:10px;letter-spacing:1.5px}.intro{font-size:15px;max-width:none}.actions{margin-top:23px}.button{flex:1;padding:12px 16px;white-space:nowrap}.expertise>span:first-child{width:100%}.expertise strong{font-size:12px}.section-top{display:block}.section-top p{margin-top:14px;max-width:none}.connections{padding:42px 0}.links{grid-template-columns:1fr}.link-card,.link-card.featured{grid-column:auto;min-height:0;padding:20px;display:grid;grid-template-columns:38px 1fr;gap:16px;position:relative}.card-top{margin:0;align-self:center}.card-top .arrow{position:absolute;right:20px;top:50%;transform:translateY(-50%)}.card-bottom{padding-right:28px;margin:0}.link-card h3{font-size:17px}.link-card p{font-size:12px}.photo-label .mark{font-size:22px}footer{flex-direction:column;gap:8px}h2{font-size:29px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}.button:hover,.link-card:hover{transform:none}}
+</style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-
-    <div class="w-full max-w-sm mx-auto bg-white rounded-2xl shadow-xl p-8 text-center">
-        <img class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-400 object-cover" src="avatar.jpg" alt="Ảnh đại diện Nguyễn Quốc Hiển">
-
-        <h1 class="text-2xl font-bold text-gray-800 mb-1">Nguyễn Quốc Hiển</h1>
-        <p class="text-gray-500 mb-6">AI & Automation Engineer</p>
-
-        <div class="space-y-4">
-            <a href="https://www.facebook.com/quoc.hien.1210" target="_blank" class="w-full flex items-center justify-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">
-                <i class="fab fa-facebook-f w-6 mr-2"></i> Facebook
-            </a>
-            <a href="https://www.instagram.com/quoocs_hieen_/" target="_blank" class="w-full flex items-center justify-center bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white py-3 rounded-lg font-semibold hover:opacity-90 transition-transform transform hover:scale-105 duration-300">
-                <i class="fab fa-instagram w-6 mr-2"></i> Instagram
-            </a>
-             <a href="https://github.com/prozetk2" target="_blank" class="w-full flex items-center justify-center bg-gray-800 text-white py-3 rounded-lg font-semibold hover:bg-gray-900 transition-transform transform hover:scale-105 duration-300">
-                <i class="fab fa-github w-6 mr-2"></i> GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/cos-alpha-1210-prozetk2/" target="_blank" class="w-full flex items-center justify-center bg-blue-700 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition-transform transform hover:scale-105 duration-300">
-                <i class="fab fa-linkedin-in w-6 mr-2"></i> LinkedIn
-            </a>
-            <a href="https://www.kaggle.com/nguynquchin" target="_blank" class="w-full flex items-center justify-center bg-sky-500 text-white py-3 rounded-lg font-semibold hover:bg-sky-600 transition-transform transform hover:scale-105 duration-300">
-                <i class="fab fa-kaggle w-6 mr-2"></i> Kaggle
-            </a>
-        </div>
-    </div>
-
+<body>
+<a class="skip" href="#main">Chuyển đến nội dung chính</a>
+<div class="wrap">
+<header>
+<a class="brand" href="./" aria-label="Nguyễn Quốc Hiển — Trang chủ">hien<span>.</span></a>
+<nav aria-label="Điều hướng chính"><a class="nav-about" href="#about">Giới thiệu</a><a class="nav-contact" href="#connect">Kết nối <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main id="main">
+<section class="hero" id="about" aria-labelledby="name">
+<div class="hero-copy">
+<div class="eyebrow"><span class="dot" aria-hidden="true"></span> Hi, mình là Hiển</div>
+<h1 id="name"><span>Nguyễn</span><span>Quốc Hiển<span style="display:inline;color:#78944f">.</span></span></h1>
+<p class="role">AI &amp; Automation Engineer</p>
+<p class="intro">Mình yêu thích việc kết nối trí tuệ nhân tạo với tự động hóa — biến những ý tưởng thành giải pháp có thể sử dụng trong thực tế.</p>
+<div class="actions"><a class="button primary" href="https://github.com/prozetk2" target="_blank" rel="noopener noreferrer">Khám phá GitHub <span aria-hidden="true">↗</span></a><a class="button secondary" href="#connect">Kết nối với mình <span aria-hidden="true">↓</span></a></div>
+</div>
+<figure class="portrait">
+<div class="photo-frame"><img src="avatar.jpg" alt="Chân dung Nguyễn Quốc Hiển" width="400" height="420" fetchpriority="high"></div>
+<figcaption class="photo-label"><div><strong>Từ ý tưởng đến ứng dụng.</strong><small>Artificial Intelligence &amp; Automation</small></div><span class="mark" aria-hidden="true">✳</span></figcaption>
+</figure>
+</section>
+<div class="expertise" aria-label="Lĩnh vực quan tâm"><span>Điều mình quan tâm</span><strong>Artificial Intelligence</strong><strong>Automation</strong><strong>Engineering</strong></div>
+<section class="connections" id="connect" aria-labelledby="connect-title">
+<div class="section-top"><div><div class="eyebrow">01 / Stay connected</div><h2 id="connect-title">Gặp mình ở đây.</h2></div><p>Từ công việc đến cuộc sống thường ngày, chọn nơi bạn muốn kết nối.</p></div>
+<div class="links">
+<a class="link-card featured github" href="https://github.com/prozetk2" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">&lt;/&gt;</span><span class="arrow" aria-hidden="true">↗</span></div><div class="card-bottom"><h3>GitHub</h3><p>Khám phá mã nguồn &amp; những dự án mình xây dựng.</p></div></a>
+<a class="link-card featured linkedin" href="https://www.linkedin.com/in/cos-alpha-1210-prozetk2/" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">in</span><span class="arrow" aria-hidden="true">↗</span></div><div class="card-bottom"><h3>LinkedIn</h3><p>Hồ sơ chuyên môn &amp; kết nối công việc.</p></div></a>
+<a class="link-card" href="https://www.facebook.com/quoc.hien.1210" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">f</span><span class="arrow" aria-hidden="true">↗</span></div><div class="card-bottom"><h3>Facebook</h3><p>Chia sẻ &amp; trò chuyện mỗi ngày.</p></div></a>
+<a class="link-card" href="https://www.instagram.com/quoocs_hieen_/" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">◎</span><span class="arrow" aria-hidden="true">↗</span></div><div class="card-bottom"><h3>Instagram</h3><p>Những khoảnh khắc đời thường.</p></div></a>
+<a class="link-card" href="https://www.kaggle.com/nguynquchin" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">k</span><span class="arrow" aria-hidden="true">↗</span></div><div class="card-bottom"><h3>Kaggle</h3><p>Kết nối qua dữ liệu &amp; AI.</p></div></a>
+</div>
+<p class="connect-note">Các liên kết bên ngoài sẽ mở trong tab mới.</p>
+</section>
+</main>
+<footer><span>© Nguyễn Quốc Hiển</span><a href="#about">Về đầu trang <span aria-hidden="true">↑</span></a></footer>
+</div>
 </body>
 </html>
