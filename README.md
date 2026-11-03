@@ -1,23 +1,23 @@
 # Cos_Alpha
 
-Portfolio của Nguyễn Quốc Hiển: AI & Automation, Creative Technology, Generative Video và Motion Graphics.
+The portfolio of Nguyễn Quốc Hiển: AI & Automation, Creative Technology, Generative Video and Motion Graphics.
 
-## Cấu trúc
+## Structure
 
-- `index.html`: nội dung, dự án và hai sản phẩm video đã công khai.
-- `styles.css`: giao diện responsive, màu sắc và bố cục.
-- `main.js`: mở ảnh dự án trong hộp thoại; hỗ trợ Escape và bàn phím.
-- `assets/`: screenshot thật của InvoiceFlow AI, TheKey.studio, VietSpeakAI và Phong Vân.
-- `portrait.png`, `avatar.jpg`: ảnh cá nhân.
+- `index.html`: English content, projects and two publicly released video projects.
+- `styles.css`: responsive layout, colors and presentation.
+- `main.js`: project image previews in an accessible dialog with keyboard and Escape support.
+- `assets/`: original screenshots of InvoiceFlow AI, TheKey.studio, VietSpeakAI and Phong Vân.
+- `portrait.png`, `avatar.jpg`: personal photos.
 
-Ảnh dự án giữ nguyên nội dung gốc, hiển thị theo tỉ lệ gốc trong khung. Bấm ảnh để xem lớn. Screenshot InvoiceFlow dùng tài liệu demo tổng hợp.
+Project screenshots retain their original content and proportions. Click an image to enlarge it. The InvoiceFlow screenshot uses a synthetic demo document. Proper names and original screenshot content are preserved; the website interface, captions, accessibility labels and metadata are in English. The music video title is presented in English as "Finding You: When Longing Speaks."
 
-Hai video dùng ảnh xem trước chính thức từ bài đăng X và YouTube, bấm để mở bản phát hành gốc trong tab mới. Website không tự động phát video. Không đưa các dự án nhãn hàng chưa được phép công khai lên website.
+Both videos use official preview images from their public X and YouTube posts. Clicking opens the original release in a new tab. The website does not autoplay video. Brand projects without permission for public release are not included.
 
-## Chạy trên máy
-Giải nén và mở index.html trong trình duyệt. Hoặc chạy `python -m http.server 8000` trong thư mục rồi truy cập http://localhost:8000.
+## Run locally
+Open `index.html` in a browser, or run `python -m http.server 8000` from this directory and visit http://localhost:8000.
 
 ## GitHub Pages
-Đưa `index.html`, `styles.css`, `main.js`, thư mục `assets/`, `portrait.png` và `avatar.jpg` vào thư mục gốc nhánh `main` dùng để deploy GitHub Pages.
+Publish `index.html`, `styles.css`, `main.js`, the `assets/` directory, `portrait.png` and `avatar.jpg` at the root of the `main` branch configured for GitHub Pages.
 
-Không cần npm hay bước build. Các nhãn công nghệ dựa trên mã nguồn/README công khai của dự án; không công bố backend chưa xác minh của VietSpeakAI.
+No npm installation or build step is needed. Technology labels are based on the projects' public source code and READMEs. Unverified details about VietSpeakAI's backend are not published.
