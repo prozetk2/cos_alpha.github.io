@@ -1,82 +1,183 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f4ed">
-<meta name="description" content="Nguyễn Quốc Hiển - AI & Automation Engineer. Khám phá sản phẩm, hồ sơ, mã nguồn và kết nối với Hiển.">
-<title>Nguyễn Quốc Hiển - AI & Automation Engineer</title>
-<style>
-:root{color-scheme:light;--paper:#f5f4ed;--ink:#193d35;--muted:#58675f;--line:#d9dfd3;--accent:#d9edab}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}a,button{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:3px solid #477327;outline-offset:5px}.skip{position:absolute;top:-100px;left:20px;padding:12px;background:var(--ink);color:white;z-index:10}.skip:focus{top:12px}.wrap{width:min(1120px,calc(100% - 64px));margin:auto}
-header{display:flex;align-items:center;justify-content:space-between;padding:29px 0;border-bottom:1px solid var(--line)}.brand{font-weight:750;letter-spacing:-.6px;font-size:22px}.brand span{color:#678344}nav{display:flex;gap:30px;font-size:14px;font-weight:600}nav a:hover{text-decoration:underline;text-underline-offset:6px}.nav-contact{display:inline-flex;gap:12px;align-items:center}
-.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:70px;padding:80px 0 72px;align-items:center}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:700;display:flex;align-items:center;gap:10px}.dot{height:8px;width:8px;border-radius:50%;background:#608c42}h1{font-size:clamp(42px,5.6vw,70px);line-height:1.06;letter-spacing:-3px;margin:24px 0}h1 span{display:block}.role{font-size:clamp(19px,2.3vw,25px);font-weight:500;margin:0 0 19px}.intro{color:var(--muted);font-size:16px;max-width:460px;margin:0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.button{min-height:48px;padding:12px 22px;border:1px solid var(--ink);border-radius:100px;font-weight:650;font-size:14px;display:inline-flex;gap:18px;align-items:center;justify-content:center;transition:background .18s,transform .18s}.primary{background:var(--ink);color:#fff}.primary:hover{background:#2e5546}.secondary:hover{background:#e5e9dc}.button:hover{transform:translateY(-2px)}
-.portrait{position:relative;margin:0;padding:0 0 20px 20px}.photo-frame{background:#dfe5d3;border-radius:150px 150px 20px 20px;overflow:hidden;aspect-ratio:4/4.2;border:1px solid #d4dcc8}.photo-frame img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}.photo-label{position:absolute;bottom:0;left:0;right:28px;background:var(--ink);color:white;border-radius:12px;padding:17px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}.photo-label strong{font-size:14px;display:block}.photo-label small{font-size:12px;color:#c9d7ce}.photo-label .mark{color:var(--accent);font-size:28px}
-.expertise{display:flex;align-items:center;flex-wrap:wrap;gap:12px 30px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.expertise>span:first-child{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-right:auto}.expertise strong{font-weight:550;font-size:14px}.expertise strong:before{content:"✳";color:#6f8a4d;margin-right:10px}
-.connections{padding:64px 0 70px;scroll-margin-top:24px}.section-top{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:28px}h2{font-size:32px;letter-spacing:-1.2px;line-height:1.2;margin:9px 0 0}.section-top p{margin:0;color:var(--muted);font-size:14px;max-width:275px}.links{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.link-card{grid-column:span 2;border:1px solid var(--line);border-radius:16px;padding:24px;background:#fbfcf7;min-height:180px;display:flex;flex-direction:column;transition:background .18s,border-color .18s,transform .18s}.link-card.featured{grid-column:span 3;min-height:195px}.link-card.github{background:var(--ink);border-color:var(--ink);color:#fff}.link-card.linkedin{background:var(--accent);border-color:#c4d99b}.link-card:hover{transform:translateY(-4px);border-color:#7b9272;background:#edf1e3}.link-card.github:hover{background:#285044}.link-card.linkedin:hover{background:#cfe49e}.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.icon{font-family:ui-monospace,SFMono-Regular,monospace;font-weight:700;font-size:18px;line-height:1;border:1px solid currentColor;border-radius:9px;width:38px;height:38px;display:grid;place-items:center}.arrow{font-size:22px;font-weight:400}.link-card h3{font-size:19px;margin:0 0 5px;letter-spacing:-.4px}.link-card p{font-size:13px;margin:0;color:var(--muted)}.github p{color:#c8d8d0}.linkedin p{color:#3e5931}.card-bottom{margin-top:auto}.connect-note{font-size:12px;color:var(--muted);margin:18px 0 0}
-footer{border-top:1px solid var(--line);padding:24px 0 30px;display:flex;gap:20px;justify-content:space-between;font-size:12px;color:var(--muted)}footer a:hover{text-decoration:underline}
-@media(min-width:1250px){.hero{gap:100px}.portrait{max-width:400px;justify-self:end;width:100%}}
-@media(max-width:760px){.wrap{width:calc(100% - 40px)}header{padding:21px 0}nav{gap:18px}.hero{gap:30px;padding:48px 0;grid-template-columns:1.1fr 1fr}h1{letter-spacing:-2px;font-size:46px}.role{font-size:18px}.intro{font-size:14px}.photo-label{padding:12px;right:0}.photo-label small{font-size:10px}.photo-label strong{font-size:12px}.portrait{padding-left:0}.section-top{align-items:start}.link-card{padding:20px}.expertise{gap:12px 20px}}
-@media(max-width:560px){nav .nav-about{display:none}.hero{grid-template-columns:1fr;padding-top:36px;gap:36px}.hero-copy{order:1}.portrait{order:0;width:min(270px,80%);justify-self:center;padding-bottom:17px}.photo-frame{aspect-ratio:1.16;border-radius:120px 120px 18px 18px}.photo-label{left:-15px;right:-15px;bottom:0}h1{font-size:48px;margin:18px 0}.eyebrow{font-size:10px;letter-spacing:1.5px}.intro{font-size:15px;max-width:none}.actions{margin-top:23px}.button{flex:1;padding:12px 16px;white-space:nowrap}.expertise>span:first-child{width:100%}.expertise strong{font-size:12px}.section-top{display:block}.section-top p{margin-top:14px;max-width:none}.connections{padding:42px 0}.links{grid-template-columns:1fr}.link-card,.link-card.featured{grid-column:auto;min-height:0;padding:20px;display:grid;grid-template-columns:38px 1fr;gap:16px;position:relative}.card-top{margin:0;align-self:center}.card-top .arrow{position:absolute;right:20px;top:50%;transform:translateY(-50%)}.card-bottom{padding-right:28px;margin:0}.link-card h3{font-size:17px}.link-card p{font-size:12px}.photo-label .mark{font-size:22px}footer{flex-direction:column;gap:8px}h2{font-size:29px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}.button:hover,.link-card:hover{transform:none}}
-
-.products{padding:64px 0;border-bottom:1px solid var(--line);scroll-margin-top:24px}.product{display:grid;grid-template-columns:1.15fr 1fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fbfcf7}.product-art{min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 100%,#3f5144,transparent 70%),#182c29;color:#ece2ca;padding:36px;text-align:center;position:relative}.product-art:before,.product-art:after{content:"";width:130px;height:1px;background:#b79b65;margin:22px}.product-art strong{font-family:Georgia,"Times New Roman",serif;font-size:clamp(40px,5vw,60px);font-weight:400;letter-spacing:5px;line-height:1.3}.product-art span{font-size:11px;letter-spacing:4px;color:#ccb98e}.product-info{padding:38px;align-self:center}.product-type{font-size:11px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted)}.product-info h3{font-size:28px;letter-spacing:-.8px;margin:10px 0}.product-info p{font-size:15px;color:var(--muted);margin:0 0 24px}.product-info .button{width:fit-content}.product-note{display:block;font-size:11px;color:var(--muted);margin-top:13px}
-@media(max-width:560px){.products{padding:42px 0}.product{grid-template-columns:1fr}.product-art{min-height:220px}.product-info{padding:25px}.product-art strong{font-size:42px}nav{gap:16px;font-size:13px}}
-.product+.product{margin-top:24px}.education-art{background:#d9edab;color:#193d35}.education-art span{color:#4f633a}.education-art:before,.education-art:after{background:#83985e}.education-art strong{font-family:inherit;font-size:clamp(30px,4vw,48px);letter-spacing:-2px;font-weight:650}.product-info .award{font-size:13px;font-weight:650;color:#38572e;background:#edf2df;border:1px solid #d8e2c8;border-radius:10px;padding:12px 14px;line-height:1.5}
-
-/* Project showcase */
-.products>.product{display:grid;grid-template-columns:1.12fr 1fr;border-radius:24px;background:#fffef9;border:1px solid #d9dfd3;box-shadow:0 8px 30px #193d3505;overflow:hidden}.products>.product+.product{margin-top:28px}.product-art{margin:12px;border-radius:16px;min-height:370px;isolation:isolate;overflow:hidden;gap:0;background:radial-gradient(ellipse at 50% 110%,#61776380,transparent 60%),linear-gradient(150deg,#112b28,#263d34);position:relative}.product-art:before{position:absolute;width:270px;height:270px;border:1px solid #cdb68038;border-radius:50%;background:none;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;z-index:-1}.product-art:after{position:absolute;width:330px;height:330px;border:1px solid #cdb6801c;border-radius:50%;background:none;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;z-index:-1}.product-art .art-kicker{position:absolute;top:25px;left:25px;font-size:9px;letter-spacing:2px;color:#c7cbb2}.product-art .art-symbol{font-family:Georgia,serif;font-size:52px;color:#d4bc82;line-height:1;margin:22px 0}.product-art strong{font-size:clamp(38px,4.8vw,58px);letter-spacing:3px;text-shadow:0 4px 24px #0003}.product-art .art-caption{font-size:11px;letter-spacing:1px;color:#d4d7c3;margin-top:17px}.product-info{padding:35px 42px 35px 30px}.product-type{font-size:10px;letter-spacing:2px;font-weight:650}.project-tags{display:flex;gap:7px;flex-wrap:wrap;margin:20px 0 12px}.project-tags span{font-size:10px;padding:4px 10px;border:1px solid #dae2d2;border-radius:100px;color:#56684e;background:#f6f8ef}.product-info h3{font-size:36px;letter-spacing:-1.2px;margin:0 0 14px;line-height:1.2}.product-info p{font-size:14px;line-height:1.8;max-width:360px;margin-bottom:22px}.product-info .button{min-width:160px;justify-content:space-between}.product-note{font-size:10px}.education-art{background:radial-gradient(circle at 20% 20%,#fff9,transparent 60%),linear-gradient(140deg,#e6edce,#cfdfb6);color:#193d35}.education-art:before,.education-art:after{border-color:#688a4826;background:none}.education-art .art-kicker{color:#537044}.education-art .art-symbol{position:relative;display:block;background:#fafcf0;border:1px solid #a8be8f;border-radius:22px 22px 22px 4px;width:92px;height:78px;line-height:78px;font-size:39px;letter-spacing:-4px;color:#365735;box-shadow:0 8px 20px #4263350c}.speech-dot{position:absolute;right:-12px;top:-12px;display:grid;place-items:center;width:32px;height:32px;border:3px solid #dae6c3;background:#325335;color:#e2efbe;border-radius:50%;font-size:17px;line-height:1;letter-spacing:0}.education-art strong{font-family:inherit;font-size:clamp(32px,4vw,46px);font-weight:700;letter-spacing:-2px;text-shadow:none}.education-art .art-caption{color:#536c46}.product-info .award{border-left:3px solid #85a05c;border-radius:0 8px 8px 0;background:#eff4e6;border-top:0;border-right:0;border-bottom:0;padding:10px 13px;font-size:12px;line-height:1.6}.product{transition:box-shadow .2s,border-color .2s}.product:hover{border-color:#a8b99a;box-shadow:0 12px 35px #193d350b}
-@media(max-width:760px){.product-info{padding:26px 24px 26px 18px}.product-info h3{font-size:29px}.product-art{min-height:360px}.product-art strong{font-size:38px}.education-art strong{font-size:32px}}
-@media(max-width:560px){.products>.product{grid-template-columns:1fr;border-radius:20px}.product-art{min-height:260px;margin:10px}.product-art:before{width:210px;height:210px}.product-art:after{width:260px;height:260px}.product-art .art-kicker{top:19px;left:19px;font-size:8px}.product-art .art-symbol{font-size:40px;margin:14px 0}.product-art strong{font-size:43px}.education-art strong{font-size:35px}.education-art .art-symbol{font-size:32px;width:76px;height:64px;line-height:64px;border-radius:18px 18px 18px 4px}.product-info{padding:19px 24px 27px}.product-info h3{font-size:30px}.project-tags{margin-top:15px}.product-info .button{width:100%}.product-info p{max-width:none}.product-note{text-align:center}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ed">
+  <meta name="description" content="Nguyễn Quốc Hiển — AI & Automation Engineer, AI Creative và Motion Design. Khám phá dự án AI, generative video và nội dung sáng tạo cho sản phẩm.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cos_Alpha — AI, Automation & Creative Technology">
+  <meta property="og:description" content="Từ hệ thống AI đến câu chuyện sản phẩm bằng hình ảnh và chuyển động. Portfolio của Nguyễn Quốc Hiển.">
+  <meta property="og:url" content="https://prozetk2.github.io/cos_alpha.github.io/">
+  <meta property="og:image" content="https://prozetk2.github.io/cos_alpha.github.io/portrait.png">
+  <link rel="canonical" href="https://prozetk2.github.io/cos_alpha.github.io/">
+  <link rel="icon" href="avatar.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+  <title>Nguyễn Quốc Hiển — AI, Automation & Creative Technology</title>
 </head>
 <body>
-<a class="skip" href="#main">Chuyển đến nội dung chính</a>
-<div class="wrap">
-<header>
-<a class="brand" href="./" aria-label="Nguyễn Quốc Hiển - Trang chủ">Cos_Alpha</a>
-<nav aria-label="Điều hướng chính"><a class="nav-about" href="#about">Giới thiệu</a><a href="#products">Sản phẩm</a><a class="nav-contact" href="#connect">Kết nối <span aria-hidden="true">↗</span></a></nav>
-</header>
-<main id="main">
-<section class="hero" id="about" aria-labelledby="name">
-<div class="hero-copy">
-<div class="eyebrow"><span class="dot" aria-hidden="true"></span> Hi, mình là Hiển</div>
-<h1 id="name"><span>Nguyễn</span><span>Quốc Hiển<span style="display:inline;color:#78944f">.</span></span></h1>
-<p class="role">AI &amp; Automation Engineer</p>
-<p class="intro">Mình yêu thích việc kết nối trí tuệ nhân tạo với tự động hóa - biến những ý tưởng thành giải pháp có thể sử dụng trong thực tế.</p>
-<div class="actions"><a class="button primary" href="#products">Xem sản phẩm <span aria-hidden="true">↗</span></a><a class="button secondary" href="#connect">Kết nối với mình <span aria-hidden="true">↓</span></a></div>
-</div>
-<figure class="portrait">
-<div class="photo-frame"><img src="portrait.png" alt="Chân dung Nguyễn Quốc Hiển" width="400" height="420" fetchpriority="high"></div>
-<figcaption class="photo-label"><div><strong>Từ ý tưởng đến ứng dụng.</strong><small>Artificial Intelligence &amp; Automation</small></div><span class="mark" aria-hidden="true">✳</span></figcaption>
-</figure>
-</section>
-<div class="expertise" aria-label="Lĩnh vực quan tâm"><span>Điều mình quan tâm</span><strong>Artificial Intelligence</strong><strong>Automation</strong><strong>Engineering</strong></div>
-<section class="products" id="products" aria-labelledby="products-title">
-<div class="section-top"><div><div class="eyebrow">01 / Selected work</div><h2 id="products-title">Sản phẩm mình đã làm.</h2></div><p>Một góc nhỏ những ý tưởng mình đã đưa thành sản phẩm. Mời bạn trải nghiệm.</p></div>
-<article class="product">
-<div class="product-art" aria-hidden="true"><span class="art-kicker">INTERACTIVE EXPERIENCE</span><span class="art-symbol">✦</span><strong>Phong Vân</strong><span class="art-caption">Một thế giới để khám phá</span></div>
-<div class="product-info"><span class="product-type">01 / GAME</span><div class="project-tags"><span>Dự án cá nhân</span><span>Web game</span></div><h3>Phong Vân</h3><p>Một tựa game do mình phát triển, có thể trải nghiệm trực tiếp trên trình duyệt.</p><a class="button primary" href="https://phong-van.netlify.app/" target="_blank" rel="noopener noreferrer">Chơi thử <span aria-hidden="true">↗</span></a><small class="product-note">Mở game trong tab mới.</small></div>
-</article>
-<article class="product education-product">
-<div class="product-art education-art" aria-hidden="true"><span class="art-kicker">TECHNOLOGY FOR EDUCATION</span><span class="art-symbol">Aa<span class="speech-dot">✦</span></span><strong>VietSpeakAI</strong><span class="art-caption">Công nghệ vì giáo dục</span></div>
-<div class="product-info"><span class="product-type">02 / EDUCATION</span><div class="project-tags"><span>Giáo dục</span><span>Phi lợi nhuận</span></div><h3>VietSpeakAI</h3><p>Dự án phi lợi nhuận dành cho giáo dục.</p><p class="award"><span aria-hidden="true">✦</span> Giải Nhất Sáng tạo Khoa học Kỹ thuật TP. Huế</p><a class="button primary" href="https://vietspeakai.edu.vn/" target="_blank" rel="noopener noreferrer">Khám phá dự án <span aria-hidden="true">↗</span></a><small class="product-note">Mở website trong tab mới.</small></div>
-</article>
-</section>
-<section class="connections" id="connect" aria-labelledby="connect-title">
-<div class="section-top"><div><div class="eyebrow">02 / Stay connected</div><h2 id="connect-title">Gặp mình ở đây.</h2></div><p>Từ công việc đến cuộc sống thường ngày, chọn nơi bạn muốn kết nối.</p></div>
-<div class="links">
-<a class="link-card featured github" href="https://github.com/prozetk2" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">&lt;/&gt;</span><span class="arrow" aria-hidden="true">↗</span></div><div class="card-bottom"><h3>GitHub</h3><p>Khám phá mã nguồn &amp; những dự án mình xây dựng.</p></div></a>
-<a class="link-card featured linkedin" href="https://www.linkedin.com/in/cos-alpha-1210-prozetk2/" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">in</span><span class="arrow" aria-hidden="true">↗</span></div><div class="card-bottom"><h3>LinkedIn</h3><p>Hồ sơ chuyên môn &amp; kết nối công việc.</p></div></a>
-<a class="link-card" href="https://www.facebook.com/quoc.hien.1210" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">f</span><span class="arrow" aria-hidden="true">↗</span></div><div class="card-bottom"><h3>Facebook</h3><p>Chia sẻ &amp; trò chuyện mỗi ngày.</p></div></a>
-<a class="link-card" href="https://www.instagram.com/quoocs_hieen_/" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">◎</span><span class="arrow" aria-hidden="true">↗</span></div><div class="card-bottom"><h3>Instagram</h3><p>Những khoảnh khắc đời thường.</p></div></a>
-<a class="link-card" href="https://www.kaggle.com/nguynquchin" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">k</span><span class="arrow" aria-hidden="true">↗</span></div><div class="card-bottom"><h3>Kaggle</h3><p>Kết nối qua dữ liệu &amp; AI.</p></div></a>
-</div>
-<p class="connect-note">Các liên kết bên ngoài sẽ mở trong tab mới.</p>
-</section>
-</main>
-<footer><span>© Nguyễn Quốc Hiển</span><a href="#about">Về đầu trang <span aria-hidden="true">↑</span></a></footer>
-</div>
+  <a class="skip" href="#main">Chuyển đến nội dung chính</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Cos Alpha — Trang chủ">Cos_Alpha<span>✳</span></a>
+      <nav aria-label="Điều hướng chính">
+        <a href="#products">Dự án</a>
+        <a href="#creative">Creative</a>
+        <a class="nav-tech" href="#tech">Công nghệ</a>
+        <a href="#connect">Kết nối <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="about" aria-labelledby="name">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Hi, mình là Hiển</p>
+          <h1 id="name">Nguyễn<br>Quốc Hiển<span>.</span></h1>
+          <p class="role">AI &amp; Automation Engineer</p>
+          <p class="hero-specialty">Engineering meets creative thinking.</p>
+          <p class="intro">Mình xây công cụ AI, tự động hóa quy trình và kể câu chuyện sản phẩm bằng hình ảnh, video &amp; chuyển động.</p>
+          <div class="actions">
+            <a class="button primary" href="#products">Khám phá dự án <span aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="#creative">AI Creative <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <figure class="portrait">
+          <div class="photo-frame"><img src="portrait.png" alt="Chân dung Nguyễn Quốc Hiển" width="1086" height="1448" fetchpriority="high"></div>
+          <figcaption class="photo-label"><div><strong>Từ ý tưởng đến trải nghiệm.</strong><small>Code · Create · Make it move.</small></div><span aria-hidden="true">✳</span></figcaption>
+        </figure>
+      </section>
+
+      <div class="expertise" aria-label="Lĩnh vực hoạt động">
+        <span>What I do</span><strong>AI &amp; Automation</strong><strong>Creative Technology</strong><strong>Video &amp; Motion</strong>
+      </div>
+
+      <section class="section projects" id="products" aria-labelledby="products-title">
+        <div class="section-top">
+          <div><p class="eyebrow">01 / Selected work</p><h2 id="products-title">Ý tưởng thành sản phẩm.</h2></div>
+          <p>Những dự án mình xây dựng, với giao diện thật và công nghệ phía sau mỗi trải nghiệm.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project">
+            <a class="project-shot document-shot" href="assets/invoiceflow.png" data-preview data-caption="InvoiceFlow AI — Giao diện review trên tài liệu demo tổng hợp" aria-label="Xem ảnh lớn giao diện InvoiceFlow AI">
+              <img src="assets/invoiceflow.png" alt="InvoiceFlow AI: giao diện review OCR, kiểm tra tổng tiền và đối chiếu dữ liệu trên tài liệu demo tổng hợp." width="980" height="940" loading="lazy" decoding="async">
+              <span class="zoom-label">Xem ảnh <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="project-body">
+              <p class="project-type">01 / Document intelligence</p>
+              <h3>InvoiceFlow AI</h3>
+              <p>Biến hóa đơn và biên lai tiếng Việt thành dữ liệu có thể kiểm tra: OCR, đối chiếu bằng chứng, duyệt thủ công trước khi xuất và mô phỏng bàn giao ERP.</p>
+              <ul class="tags" aria-label="Công nghệ InvoiceFlow AI"><li>Python</li><li>PaddleOCR</li><li>FastAPI</li><li>SQLite</li></ul>
+              <div class="project-footer"><a class="text-link" href="https://github.com/prozetk2/InvoiceFlow-AI" target="_blank" rel="noopener noreferrer">Khám phá mã nguồn <span aria-hidden="true">↗</span></a><span>Portfolio demo</span></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <a class="project-shot workflow-shot" href="assets/thekey.png" data-preview data-caption="TheKey.studio — Canvas tạo ảnh, video và timeline" aria-label="Xem ảnh lớn workflow TheKey.studio">
+              <img src="assets/thekey.png" alt="Canvas TheKey.studio với các node tạo ảnh, tạo video được kết nối và timeline dựng clip." width="1919" height="833" loading="lazy" decoding="async">
+              <span class="zoom-label">Xem ảnh <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="project-body">
+              <p class="project-type">02 / Creative tooling</p>
+              <h3>TheKey.studio</h3>
+              <p>Extension biến quy trình tạo ảnh và video AI thành một canvas trực quan: kết nối node, quản lý cảnh, sắp xếp timeline và xuất video ngay trên trình duyệt.</p>
+              <ul class="tags" aria-label="Công nghệ TheKey.studio"><li>JavaScript</li><li>Manifest V3</li><li>FFmpeg.wasm</li><li>WebM / MP4</li></ul>
+              <div class="project-footer"><a class="text-link" href="https://github.com/prozetk2/workflowmuseai" target="_blank" rel="noopener noreferrer">Khám phá mã nguồn <span aria-hidden="true">↗</span></a><span>AI workflows</span></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <a class="project-shot education-shot" href="assets/vietspeakai.png" data-preview data-caption="VietSpeakAI — Giao diện luyện nói và nghe tiếng Việt" aria-label="Xem ảnh lớn giao diện VietSpeakAI">
+              <img src="assets/vietspeakai.png" alt="Giao diện VietSpeakAI với bài luyện nói và nghe, đánh giá theo tiêu chí và gợi ý luyện tập cá nhân." width="1919" height="897" loading="lazy" decoding="async">
+              <span class="zoom-label">Xem ảnh <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="project-body">
+              <p class="project-type">03 / Technology for education</p>
+              <h3>VietSpeakAI</h3>
+              <p>Dự án giáo dục phi lợi nhuận hỗ trợ luyện nói và nghe tiếng Việt, đánh giá theo tiêu chí và gợi ý luyện tập. AI hỗ trợ, giáo viên quyết định.</p>
+              <p class="award"><span aria-hidden="true">✦</span> Giải Nhất Sáng tạo Khoa học Kỹ thuật TP. Huế</p>
+              <ul class="tags" aria-label="Công nghệ VietSpeakAI"><li>React</li><li>Supabase</li><li>Web application</li></ul>
+              <div class="project-footer"><a class="text-link" href="https://vietspeakai.edu.vn/" target="_blank" rel="noopener noreferrer">Trải nghiệm sản phẩm <span aria-hidden="true">↗</span></a><span>Nonprofit</span></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <a class="project-shot game-shot" href="assets/phongvan.png" data-preview data-caption="Phong Vân — Màn hình chính của game" aria-label="Xem ảnh lớn game Phong Vân">
+              <img src="assets/phongvan.png" alt="Màn hình chính game Phong Vân: ngôi làng 3D, nhân vật và các lựa chọn bắt đầu hành trình." width="1142" height="817" loading="lazy" decoding="async">
+              <span class="zoom-label">Xem ảnh <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="project-body">
+              <p class="project-type">04 / Interactive experience</p>
+              <h3>Phong Vân</h3>
+              <p>Một thế giới 3D chạy ngay trên trình duyệt. Dựng hình, tương tác và trải nghiệm game được phát triển bằng code, từ ý tưởng đến hành trình khám phá.</p>
+              <ul class="tags" aria-label="Công nghệ Phong Vân"><li>Three.js</li><li>JavaScript</li><li>3D rendering</li><li>Browser game</li></ul>
+              <div class="project-footer"><a class="text-link" href="https://phong-van.netlify.app/" target="_blank" rel="noopener noreferrer">Bắt đầu hành trình <span aria-hidden="true">↗</span></a><span>Play online</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="creative" id="creative" aria-labelledby="creative-title">
+        <div class="creative-heading">
+          <div><p class="eyebrow">02 / AI Creative Studio</p><h2 id="creative-title">Ý tưởng có hình.<br>Sản phẩm có chuyển động<span>.</span></h2></div>
+          <p>Mình kết hợp AI với tư duy hình ảnh, nhịp dựng và motion graphics để tạo nội dung quảng cáo, video giới thiệu sản phẩm và những câu chuyện giàu cảm xúc.</p>
+        </div>
+
+        <div class="creative-services">
+          <article><span class="service-number">01</span><h3>AI Creative</h3><p>Phát triển concept, hình ảnh chủ đạo và visual phù hợp với câu chuyện, cá tính của sản phẩm.</p><span class="service-detail">Concept · Art direction · Product visuals</span></article>
+          <article><span class="service-number">02</span><h3>Generative Video</h3><p>Từ kịch bản và storyboard đến cảnh quay bằng AI, dựng nhịp và hoàn thiện video giới thiệu sản phẩm.</p><span class="service-detail">Script · Image to video · Editing</span></article>
+          <article><span class="service-number">03</span><h3>Motion Graphics</h3><p>Chuyển thông điệp thành chuyển động: typography, điểm nhấn tính năng và đồ họa cho quảng cáo.</p><span class="service-detail">Typography · Product explainers · Social ads</span></article>
+        </div>
+
+        <div class="public-work-heading"><p class="eyebrow">Selected public work</p><span>Hai sản phẩm đã được công khai</span></div>
+        <div class="video-grid">
+          <article class="video-card">
+            <a class="video-frame video-preview" href="https://x.com/gethealai/status/2108957548426784905" target="_blank" rel="noopener noreferrer" aria-label="Xem video giới thiệu sản phẩm HealAI trên X, mở tab mới">
+              <img src="https://pbs.twimg.com/amplify_video_thumb/2108956372029304832/img/6EjZJsOsdXWT_oxo.jpg" alt="Ảnh xem trước chính thức của video giới thiệu sản phẩm HealAI." width="1920" height="1080" loading="lazy" decoding="async">
+              <span class="play-button" aria-hidden="true">▶</span><span class="video-destination">Xem video trên X <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="video-info"><p class="project-type">Product video / HealAI</p><h3>Kể câu chuyện sản phẩm.</h3><p>Video giới thiệu cách hoạt động của thiết bị HealAI, đã được công khai trên kênh của thương hiệu.</p><a class="text-link" href="https://x.com/gethealai/status/2108957548426784905" target="_blank" rel="noopener noreferrer">Xem bản gốc trên X <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="video-card">
+            <a class="video-frame video-preview" href="https://www.youtube.com/watch?v=3xVMJUGerZ8" target="_blank" rel="noopener noreferrer" aria-label="Xem Tìm em: Khi nỗi nhớ lên tiếng trên YouTube, mở tab mới">
+              <img src="https://i.ytimg.com/vi/3xVMJUGerZ8/hqdefault.jpg" alt="Ảnh xem trước chính thức của Tìm em: Khi nỗi nhớ lên tiếng trên kênh K.T Audio." width="480" height="360" loading="lazy" decoding="async">
+              <span class="play-button" aria-hidden="true">▶</span><span class="video-destination">Xem video trên YouTube <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="video-info"><p class="project-type">Visual storytelling / K.T Audio</p><h3>Tìm em: Khi nỗi nhớ lên tiếng</h3><p>Một sản phẩm video âm nhạc, nơi hình ảnh và nhịp điệu cùng dẫn dắt cảm xúc. Đã công khai trên YouTube.</p><a class="text-link" href="https://www.youtube.com/watch?v=3xVMJUGerZ8" target="_blank" rel="noopener noreferrer">Xem bản gốc trên YouTube <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+
+        <ol class="creative-process" aria-label="Quy trình sáng tạo"><li><span>01</span> Concept &amp; storyboard</li><li><span>02</span> AI generation</li><li><span>03</span> Motion &amp; editing</li><li><span>04</span> Final delivery</li></ol>
+        <div class="creative-bottom"><p>Các dự án chưa được nhãn hàng cho phép công khai được giữ riêng.</p><a class="button light-button" href="https://www.linkedin.com/in/cos-alpha-1210-prozetk2/" target="_blank" rel="noopener noreferrer">Trao đổi dự án <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="section technology" id="tech" aria-labelledby="tech-title">
+        <div class="section-top"><div><p class="eyebrow">03 / Under the hood</p><h2 id="tech-title">Công nghệ phục vụ ý tưởng.</h2></div><p>Từ xử lý tài liệu đến công cụ sáng tạo, mỗi bài toán có một bộ công cụ phù hợp.</p></div>
+        <div class="tech-grid">
+          <article><span class="tech-mark" aria-hidden="true">{ }</span><h3>AI &amp; Automation</h3><p>Xử lý dữ liệu, nhận dạng tài liệu và kết nối các bước kiểm tra trong quy trình.</p><ul class="tags"><li>Python</li><li>PaddleOCR</li><li>FastAPI</li><li>Pandas</li><li>SQLite</li></ul></article>
+          <article><span class="tech-mark" aria-hidden="true">&lt;/&gt;</span><h3>Web &amp; Interactive</h3><p>Giao diện ứng dụng, trải nghiệm 3D và công cụ chạy trực tiếp trên trình duyệt.</p><ul class="tags"><li>JavaScript</li><li>React</li><li>Supabase</li><li>Three.js</li><li>HTML / CSS</li></ul></article>
+          <article><span class="tech-mark" aria-hidden="true">▷</span><h3>Creative Pipeline</h3><p>Workflow trực quan cho tạo ảnh, video AI, dựng timeline và xuất nội dung.</p><ul class="tags"><li>Visual workflows</li><li>AI video</li><li>FFmpeg.wasm</li><li>WebM / MP4</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section connections" id="connect" aria-labelledby="connect-title">
+        <div class="section-top"><div><p class="eyebrow">04 / Stay connected</p><h2 id="connect-title">Cùng tạo điều tiếp theo.</h2></div><p>Một ý tưởng AI, một công cụ mới hay một câu chuyện sản phẩm — mình luôn muốn được nghe.</p></div>
+        <div class="links">
+          <a class="link-card featured github" href="https://github.com/prozetk2" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">&lt;/&gt;</span><span class="arrow" aria-hidden="true">↗</span></div><div><h3>GitHub</h3><p>Mã nguồn &amp; những dự án mình xây dựng.</p></div></a>
+          <a class="link-card featured linkedin" href="https://www.linkedin.com/in/cos-alpha-1210-prozetk2/" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">in</span><span class="arrow" aria-hidden="true">↗</span></div><div><h3>LinkedIn</h3><p>Kết nối công việc &amp; trao đổi dự án.</p></div></a>
+          <a class="link-card" href="https://www.facebook.com/quoc.hien.1210" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">f</span><span class="arrow" aria-hidden="true">↗</span></div><div><h3>Facebook</h3><p>Chia sẻ &amp; trò chuyện mỗi ngày.</p></div></a>
+          <a class="link-card" href="https://www.instagram.com/quoocs_hieen_/" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">◎</span><span class="arrow" aria-hidden="true">↗</span></div><div><h3>Instagram</h3><p>Những khoảnh khắc đời thường.</p></div></a>
+          <a class="link-card" href="https://www.kaggle.com/nguynquchin" target="_blank" rel="noopener noreferrer"><div class="card-top"><span class="icon" aria-hidden="true">k</span><span class="arrow" aria-hidden="true">↗</span></div><div><h3>Kaggle</h3><p>Kết nối qua dữ liệu &amp; AI.</p></div></a>
+        </div>
+        <p class="connect-note">Các liên kết bên ngoài mở trong tab mới.</p>
+      </section>
+    </main>
+    <footer><span>© Nguyễn Quốc Hiển · Cos_Alpha</span><span>Engineering with purpose. Creating with feeling.</span><a href="#about">Về đầu trang <span aria-hidden="true">↑</span></a></footer>
+  </div>
+
+  <dialog id="image-dialog" aria-labelledby="image-caption">
+    <div class="dialog-toolbar"><p id="image-caption"></p><button type="button" id="close-image" aria-label="Đóng ảnh" autofocus>Đóng <span aria-hidden="true">×</span></button></div>
+    <img id="expanded-image" alt="">
+  </dialog>
 </body>
 </html>
-
