@@ -7,7 +7,7 @@ The portfolio of Nguyễn Quốc Hiển: AI & Automation, Creative Technology, G
 - `index.html`: English content, projects and two publicly released video projects.
 - `styles.css`: responsive layout, colors and presentation.
 - `main.js`: project image previews in an accessible dialog with keyboard and Escape support.
-- `assets/`: original screenshots of InvoiceFlow AI, TheKey.studio, VietSpeakAI and Phong Vân.
+- `assets/`: original screenshots of InvoiceFlow AI, TheKey.studio, VietSpeakAI and Phong Vân, plus a desktop + mobile mockup of the COS ALPHA Fashion Store (`cosalpha-store.jpg`, captured from the live demo at https://cos-alpha-theme.vercel.app/).
 - `portrait.png`, `avatar.jpg`: personal photos.
 
 Project screenshots retain their original content and proportions. Click an image to enlarge it. The InvoiceFlow screenshot uses a synthetic demo document. Proper names and original screenshot content are preserved; the website interface, captions, accessibility labels and metadata are in English. The music video title is presented in English as "Finding You: When Longing Speaks."
